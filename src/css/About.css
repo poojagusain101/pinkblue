@@ -1,0 +1,33 @@
+.about{
+    display: flex;
+}
+
+.body{
+    margin: 120px 10px;
+    margin-bottom: 0 !important;
+    text-align: start;
+}
+
+.section{
+    margin: 10px 32px;
+    background-color: rgb(238, 250, 215);
+    border-radius: 10px;
+}
+
+.section h1{
+    color:rgb(2, 2, 28);
+}
+
+.section h1:hover{
+    color:rgb(8, 25, 81);
+}
+
+
+@media screen and (max-width: 850px){
+    
+
+    .about-img{
+        display: none;
+        flex-direction: column;
+    }
+}

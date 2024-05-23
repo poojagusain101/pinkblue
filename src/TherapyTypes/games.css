@@ -1,0 +1,65 @@
+.games{
+    background-color: wheat;
+}
+.games-h1{
+   
+    font-size: 2.5rem;
+}
+
+.games-h2{
+    padding-top: 130px;
+    /* padding: 20px; */
+    color: rgba(8, 93, 121, 0.963);
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+.grid-wrapper-game{
+    padding: 3rem;
+    display: flex;
+    margin: 0px 30px;
+    
+}
+
+.gamescard{
+    box-shadow: 0 5px 25px 2px rgb(193, 188, 188);
+    height: 1080px;
+    width: 380px;
+    margin: 10px;
+    padding:10px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.gamescard img{
+    height:220px;
+    width: 200px;
+}
+.gamescard h3{
+    margin: 25px;
+    color: rgba(252, 252, 252, 0.963);
+}
+
+.gamescard p{
+    color:white;
+    text-align: left;
+}
+.gamescard h4{
+    padding:15px;
+    color: white;
+}
+
+.games-btn{
+    margin: 30px;
+    color: white;
+    background-color: rgba(21, 31, 80, 0.963);
+    border: 2px solid white;
+    border-radius: 18px;
+    width: 150px;
+    height: 40px;
+}
+
+.games-btn:hover{
+    cursor: pointer;
+    background-color: rgba(57, 84, 205, 0.963);
+}

@@ -1,0 +1,46 @@
+.getstarted{
+    margin-top: 40px;
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+}
+
+
+.ctn-container{
+    padding: 2rem;
+    display: flex;
+    width: 80%;
+    box-shadow: 0px 0px 10px black;
+    margin: 10px auto;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.ctn-btn{
+    padding: 20px 50px;
+    color: white;
+    background-color: rgb(13, 113, 113);
+    border: none;
+    font-size: 25px;
+    border-radius: 2px;
+    box-shadow: 0 0 20px 5px rgb(73, 73, 254);
+}
+
+.ctn-btn:hover{
+    background-color: rgba(38, 19, 167, 0.623);
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (max-width:850px){
+    .ctn-container{
+        margin-left: 0;
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .ctn-btn{
+        height: 100px;
+        margin-top: 25px;
+        padding: 10px ;
+    }
+}
