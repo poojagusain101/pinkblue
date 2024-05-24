@@ -9,7 +9,7 @@ import Footer from '../Footer'
 import "../css/hero.css"
 
 
-const Home = () => {
+const Home = ({isAuth}) => {
   return (
     <div>
         <Navbar/>
@@ -18,7 +18,7 @@ const Home = () => {
       <Therapy/>
       <Popular/>
       <Testimonials/>
-      <Getstarted/>
+      <Getstarted isAuth={isAuth}/>
       <Footer/>
     </div>
   )

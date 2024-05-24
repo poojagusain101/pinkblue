@@ -1,6 +1,6 @@
 .testimonials{
     margin-top: 80px;
-    width: 100vw;
+    width: 100%;
 }
 
 .testimonials h1{
@@ -14,7 +14,7 @@
 .grid-wrapper2{
     padding: 3rem;
     display: flex;
-    margin: 20px 150px;
+    padding: 20px 150px;
     justify-content: space-between;
 }
 .review{
@@ -48,13 +48,33 @@
 .review p{
     padding-left: 70px;
     padding-right: 10px;
+    padding-bottom: 10px;
 }
 
 @media screen and (max-width: 850px){
     
 
-    .grid-wrapper{
+    /* .grid-wrapper2{
         display: flex;
         flex-direction: column;
+    } */
+
+    .testimonials h1,
+    .testimonials p {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+    }
+
+    .grid-wrapper2 {
+        padding: 1rem;
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    .review {
+        /* flex: 1 1 100%; Flexbox for full-width items */
+        margin: 10px 0;
     }
 }
+

@@ -1,17 +1,20 @@
 .about{
     display: flex;
+    margin:0 !important;
 }
 
 .body{
-    margin: 120px 10px;
+    padding: 120px 0px;
     margin-bottom: 0 !important;
     text-align: start;
+    width: 80vw;
 }
 
 .section{
     margin: 10px 32px;
     background-color: rgb(238, 250, 215);
     border-radius: 10px;
+    padding:20px;
 }
 
 .section h1{

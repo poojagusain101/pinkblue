@@ -2,7 +2,8 @@
     padding: 4rem 6rem;
     background: rgb(37, 36, 36);
     color: white;
-    width:100vw;
+    width:100%;
+    margin: 0 !important;
 }
 
 .top{
@@ -16,7 +17,7 @@
 .top i{
     color:white;
     font-size: 2rem;
-    margin-left: 1rem;
+    padding-left: 1rem;
 }
 
 .top i:hover{
@@ -49,8 +50,9 @@
     font-size: 1.1rem;
 }
 
-@media screen and (max-width:850px) {
+@media screen and (max-width:600px) {
     .footer{
+        width:100vw;
         padding: 4rem 2rem;
     }
     

@@ -109,3 +109,17 @@
     background-color: #a2d3db;
   }
   
+  @media screen and (max-width:850px){
+    .bh-top p{
+        color: white;
+        margin:10px;
+    }
+    .post {
+        width: 90%;
+        min-height: 100px;
+    }
+
+    .posttitle{
+        font-size:0.7rem;
+    }
+  }

@@ -1,22 +1,19 @@
 .counselors{
-    padding-top: 100px;
+    padding-top: 40px;
     background-color: antiquewhite;
 }
 
 .counselors-h1{
-    padding-top: 30px;
     font-size: 40px;
-    padding-left: 5rem;
 }
 
 .counselors p{
-    padding-left: 5rem;
+    padding: 1rem 2rem;
 }
 .grid-wrapper-coun{
-    padding: 1rem;
+    padding: 1.5rem;
     margin-bottom: 0px!important;
     display: flex;
-    margin: 20px 30px;
     justify-content: space-between;
 }
 .member{
@@ -24,7 +21,7 @@
     min-height: 300px;
     min-width: 400px;
     margin: 10px;
-    padding: 0 20px;
+    padding: 20px;
     padding-bottom: 10px;
     background-color: white;
     border-radius: 15px;
@@ -81,5 +78,11 @@
         display: flex;
         flex-direction: column;
         padding: 0px;
+    }
+
+    .member{
+        min-height: 300px;
+        min-width: 250px;
+        padding:20px;
     }
 }

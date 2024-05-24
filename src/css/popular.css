@@ -1,7 +1,7 @@
 .popular{
     /* margin: 0.5rem 2rem; */
     padding: 1rem;
-    width:100vw;
+    width:100%;
     background-color: wheat;
 }
 
@@ -30,8 +30,8 @@
 }
 
 .singlepost.grid:hover{
-    transform: scale(1.1);
-    transition: 1s ease-in-out;
+    transform: scale(1.01);
+    /* transition: 1s ease-in-out; */
 }
 .imgDiv{
     height: 200px;
@@ -73,7 +73,7 @@
 
 a{
     font-size: 15px;
-    color:rgb(255, 0, 187);
+    color:rgb(1, 1, 76);
     font-weight: 600;
     padding-top: .5rem;
     width: max-content;
@@ -97,6 +97,15 @@ a:hover{
 @media screen and (max-width: 850px){
     .container.grid{
         flex-wrap: wrap;
+    }
+
+    .singlepost.grid{
+        width:85%;
+    }
+
+    .imgDiv{
+        height: 130px;
+        width: 400px;
     }
 }
 

@@ -6,7 +6,7 @@
 
 .con-h1{
     position: absolute;
-    top: 30%;
+    top: 25%;
     left:40%;
     color: rgb(228, 228, 234);
     font-size: 3rem;
@@ -53,6 +53,13 @@
 }
 
 @media screen and (max-width:850px) {
+
+    .con-h1{
+        position: absolute;
+        top: 20%;
+        left:15%;
+    }
+
     .form-container{
         margin: 4rem 2rem;
     }
@@ -60,4 +67,6 @@
         padding-top: 2rem;
         width: 90%;
     }
+
+    
 }
