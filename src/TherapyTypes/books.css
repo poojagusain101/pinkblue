@@ -11,9 +11,8 @@
 }
 
 .grid-wrapper{
-    padding: 3rem;
+    padding: 3rem 8rem;
     display: block;
-    margin: 0px 100px;
     
 }
 
@@ -39,7 +38,7 @@
     /* border-radius:50%; */
 }
 .bookscard h3{
-    margin: 25px;
+    padding: 25px;
     color: rgba(21, 31, 80, 0.963);
 }
 
@@ -56,4 +55,39 @@
 .books-btn:hover{
     cursor: pointer;
     background-color: rgba(57, 84, 205, 0.963);
+}
+
+@media screen and (max-width:850px){
+
+    .books-h2{
+        padding: 4px;
+        color: rgba(37, 57, 155, 0.963);
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    .grid-wrapper{
+        padding: 3rem 4rem;
+        flex-direction: column;
+    }  
+    .row{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bookscard{
+        box-shadow: 0 5px 25px 2px rgb(230, 225, 225);
+        width: 250px;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .bookscard img{
+        height:250px;
+        width: 200px;
+        /* border-radius:50%; */
+    }
+    .bookscard h3{
+        padding: 15px;
+    }
 }
