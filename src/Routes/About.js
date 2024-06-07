@@ -11,7 +11,9 @@ const About = () => {
       <div className='body'>
       <div className="section">
         <h1>Why we are called PinkBlue?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio esse ut id. Excepturi sequi, architecto magnam saepe, dolorem optio rem incidunt laudantium, cumque rerum illum error necessitatibus molestias nostrum. Itaque.</p>
+        <p>Because we believe in the transformative power of colors. Pink represents compassion, understanding, and self-care, while blue signifies the struggles of anxiety and mental health challenges. Together, we're on a journey to blend these colors into a palette of healing and empowerment.
+        PinkBlue isn't just a name; it's a philosophy. It symbolizes our belief in creating a brighter, more vibrant world of mental wellness.
+</p>
       </div>
       <div className="section">
         <h1>Our Mission</h1>

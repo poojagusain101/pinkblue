@@ -3,6 +3,7 @@
     padding: 1rem;
     width:100%;
     background-color: wheat;
+    overflow-x:scroll;
 }
 
 .popular h1{
@@ -12,6 +13,7 @@
 .container.grid{
     display: flex;
     flex-wrap: nowrap;
+  
 }
 
 .Intro{
@@ -26,6 +28,8 @@
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 5px 25px 2px rgb(160, 159, 159);
+    height: 250px;
+    width: 750px;
     /* align-items: flex-start; */
 }
 
@@ -34,20 +38,21 @@
     /* transition: 1s ease-in-out; */
 }
 .imgDiv{
-    height: 200px;
-    width: 400px;
     border-radius: 1rem;
     border: 2px solid rgb(186, 182, 185);
     box-shadow: 0 5px 25px 2px rgb(160, 159, 159);
     /* box-shadow: 0 2px 8px 2px rgb(99, 91, 91)smoke; */
-    overflow:hidden ;
-    margin: 5px;
+    overflow:hidden;
+    margin: 15px;
+    width:500px;
     
 }
 
 .imgDiv img{
     height: 100%;
-    object-fit: cover;
+    width: 100%;
+    object-fit:cover;
+    display: block;
 }
 
 .imgDiv:hover img{

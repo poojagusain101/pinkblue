@@ -6,8 +6,8 @@ const Footer = () => {
     <div className='footer'>
         <div className="top">
             <div>
-                <h1>PinkBlue</h1>
-                <p>Making Blues pink</p>
+                <h1 className='ok'>PinkBlue</h1>
+                <p>Making Blues Pink</p>
             </div>
             <div>
                 <a href="/">
@@ -27,36 +27,42 @@ const Footer = () => {
         </div>
         <div className="bottom">
             <div>
-                <h4>Project</h4>
-                <a href="/">Changelog</a>
+                {/* <h4>Project</h4> */}
+                <a href="/">Location</a>
                 <a href="/">Status</a>
                 <a href="/">License</a>
                 <a href="/">All versions</a>
             </div>
 
             <div>
-                <h4>Project</h4>
-                <a href="/">Changelog</a>
-                <a href="/">Status</a>
-                <a href="/">License</a>
-                <a href="/">All versions</a>
+                {/* <h4>Project</h4> */}
+                <a href="/">Contact Us</a>
+                <a href="/">About Us</a>
+                <a href="/">Disclaimer</a>
+                <a href="/">Privacy Policy</a>
             </div>
 
             <div>
-                <h4>Project</h4>
-                <a href="/">Changelog</a>
+                {/* <h4>Project</h4> */}
+                <a href="/">Terms of Service</a>
                 <a href="/">Status</a>
-                <a href="/">License</a>
-                <a href="/">All versions</a>
+                <a href="/">Project</a>
+                <a href="/">Resources</a>
             </div>
 
-            <div>
+            {/* <div>
                 <h4>Project</h4>
                 <a href="/">Changelog</a>
                 <a href="/">Status</a>
                 <a href="/">License</a>
                 <a href="/">All versions</a>
-            </div>
+            </div> */}
+        </div>
+        <div className='warning'>
+            <p>Your well-being is our priority.
+                </p>
+            <p>If you are in a life-threatening situation, please do not hesitate to seek help. This platform is not equipped to handle emergencies.</p>
+            <p>All Rights Reserved. @PinkBlue</p>
         </div>
       
     </div>

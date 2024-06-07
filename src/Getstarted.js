@@ -37,7 +37,7 @@ const Getstarted = ({isAuth}) => {
         <div className="ctn-container">
             <div className="ctn-text">
                 <h1>Get Connected with PinkBlue</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, eius.</p>
+                <p>Your mental health matters to us. Connect with our team for personalized support and guidance on your wellness journey.</p>
             </div>
             {!isAuth ? 
             <Link to="/login"><button className='ctn-btn'>Get Started</button></Link>

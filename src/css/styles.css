@@ -10,3 +10,12 @@
     font-family: sans-serif;
     text-align: center;
 }
+
+
+/* Firefox Custom Scrollbar */
+/* * {
+  scrollbar-width: thin; /* Scrollbar width */
+  /* scrollbar-color: #5c19eb #f1f1f1; /* Thumb color and track color */
+  /* scroll-behavior: smooth;
+/* } */ 
+

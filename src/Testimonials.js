@@ -5,34 +5,34 @@ const Testimonials = () => {
     <div className='testimonials'>
         <h1>What our Users say</h1>
       <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente, perferendis. Fuga velit necessitatibus atque hic impedit maxime corrupti, quam, cumque mollitia aut placeat aliquam dolorum, eaque incidunt optio blanditiis expedita!
+      Hear directly from our users as they share their personal journeys and the impact our tools and resources has had on their mental health and well-being.
       </p>
       <div className="grid-wrapper2">
         <div className="review">
         <i class="fa-solid fa-quote-right"></i>
         <div className="profile">
-            <img src="https://media.istockphoto.com/id/1448167415/photo/smiling-indian-businessman-in-suit-and-glasses-with-laptop-near-office-building.webp?b=1&s=170667a&w=0&k=20&c=kQ-sWPkU5XP8sG1-MIrGnTe9SkLQBjGvVsa2X8uVHfc=" alt="" />
-            <h1>John Jacob</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP3qBEVJVulLAI3P2O0blx4CSUjzhwxJN_tQ&s" alt="" />
+            <h1>Aarti Sinha</h1>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque eligendi quis ab eveniet aliquam quaerat enim earum perferendis cum eos, officia labore. Cupiditate veniam, quisquam quod saepe atque enim.</p>
-        </div>
-
-        <div className="review">
-        <i class="fa-solid fa-quote-right"></i>
-        <div className="profile">
-            <img src="https://media.istockphoto.com/id/1448167415/photo/smiling-indian-businessman-in-suit-and-glasses-with-laptop-near-office-building.webp?b=1&s=170667a&w=0&k=20&c=kQ-sWPkU5XP8sG1-MIrGnTe9SkLQBjGvVsa2X8uVHfc=" alt="" />
-            <h1>John Jacob</h1>
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque eligendi quis ab eveniet aliquam quaerat enim earum perferendis cum eos, officia labore. Cupiditate veniam, quisquam quod saepe atque enim.</p>
+        <p>Using this app has been a game-changer for my mental health. The resources and support available have helped me navigate tough times with greater ease and resilience. I can't recommend it enough!</p>
         </div>
 
         <div className="review">
         <i class="fa-solid fa-quote-right"></i>
         <div className="profile">
-            <img src="https://media.istockphoto.com/id/1448167415/photo/smiling-indian-businessman-in-suit-and-glasses-with-laptop-near-office-building.webp?b=1&s=170667a&w=0&k=20&c=kQ-sWPkU5XP8sG1-MIrGnTe9SkLQBjGvVsa2X8uVHfc=" alt="" />
-            <h1>John Jacob</h1>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ72FBQLR2bgffyuceXXqdOtWHIANdQbFt4mA&s" alt="" />
+            <h1>Lata Jain</h1>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum cumque eligendi quis ab eveniet aliquam quaerat enim earum perferendis cum eos, officia labore. Cupiditate veniam, quisquam quod saepe atque enim.</p>
+        <p>This app has been a beacon of hope for me. The personalized guidance and activities have truly made a difference in my daily life. It's a must-have for anyone looking to improve their mental well-being.</p>
+        </div>
+
+        <div className="review">
+        <i class="fa-solid fa-quote-right"></i>
+        <div className="profile">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLANSwDpTVG7zsnaVQjXEeaYnsqpR5pg4erw&s" alt="" />
+            <h1>Jay Gupta</h1>
+        </div>
+        <p>What I love most about this app is its holistic approach to mental wellness. The integration of different resources like yoga, music, and professional therapy has made it an all-in-one solution for my mental health needs.</p>
         </div>
 
       </div>

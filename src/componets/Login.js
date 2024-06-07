@@ -5,6 +5,7 @@ import {Link,useNavigate} from "react-router-dom"
 import {auth} from "../firebase"
 import {signInWithEmailAndPassword} from "firebase/auth"
 import LoginGoogle from './LoginGoogle'
+import Navbar from '../navbar'
 
 const Login = ({setIsAuth}) => {
   const navigate=useNavigate();
@@ -39,6 +40,7 @@ const Login = ({setIsAuth}) => {
   }
   return (
     <div className="container-n">
+      <Navbar/>
         <div className="innerBox">
             <h1 className="heading">
                 Login

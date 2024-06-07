@@ -16,29 +16,32 @@ import Music from './TherapyTypes/Music';
 import Games from './TherapyTypes/Games';
 import Login from './componets/Login';
 import Signup from './componets/Signup';
-// import { auth } from './firebase';
+import { auth } from './firebase';
 import Bloghome from './pages/Bloghome';
 import Createpost from './pages/Createpost';
-// import { signOut } from 'firebase/auth';
+import { signOut } from 'firebase/auth';
 import Therapists from './TherapyTypes/Therapists';
+import ScrollToTop from './ScrollToTop';
 // import {useNavigate} from "react-router-dom"
 
 function App() {
   const [isAuth,setIsAuth]= useState(localStorage.getItem("isAuth"));
   // const navigate=useNavigate();
 
-  // const signUserOut=()=>{
-  //   signOut(auth).then(()=>{
-  //     localStorage.clear();
-  //     setIsAuth(false);
-  //     window.location.pathname="/login";
-  //   })
-  // }
+  const signUserOut=()=>{
+    signOut(auth).then(()=>{
+      localStorage.clear();
+      setIsAuth(false);
+      window.location.pathname="/login";
+    })
+  }
 
   return (
     <div className="App">
-      <Routes>      
-        <Route path='/' element={<Home isAuth={isAuth}/>}/>
+      <ScrollToTop />  
+      <Routes>   
+ 
+        <Route path='/' element={<Home isAuth={isAuth} signUserOut={signUserOut}/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/service' element={<Service/>}/>
@@ -48,7 +51,7 @@ function App() {
         <Route path='/games' element={<Games/>}/>
         <Route path='/therapists' element={<Therapists/>}/>
         <Route path='/login' element={<Login setIsAuth={setIsAuth}/>}/>
-        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/signup' element={<Signup setIsAuth={setIsAuth}/>}/>
         <Route path='/blogs' element={<Bloghome isAuth={isAuth}/>}/>
         <Route path='/blogs/createpost' element={<Createpost isAuth={isAuth}/>}/>
       </Routes>
@@ -57,8 +60,3 @@ function App() {
 }
 
 export default App;
-
-// {!isAuth ? (
-
-// )
-// }

@@ -1,8 +1,8 @@
 .games{
     background-color: wheat;
+    width:100%;
 }
 .games-h1{
-   
     font-size: 2.5rem;
 }
 
@@ -18,12 +18,13 @@
     padding: 3rem;
     display: flex;
     margin: 0px 30px;
+    overflow-x: scroll;
     
 }
 
 .gamescard{
     box-shadow: 0 5px 25px 2px rgb(193, 188, 188);
-    height: 1080px;
+    height: 1110px;
     width: 380px;
     margin: 10px;
     padding:10px;

@@ -1,11 +1,13 @@
 .footer{
-    padding: 4rem 6rem;
+    padding: 2rem 16rem;
     background: rgb(37, 36, 36);
     color: white;
     width:100%;
-    margin: 0 !important;
 }
 
+.ok:hover{
+    color: rgb(228, 62, 162);
+}
 .top{
     display: flex;
     align-items: center;
@@ -50,7 +52,12 @@
     font-size: 1.1rem;
 }
 
-@media screen and (max-width:600px) {
+.warning{
+    padding-top: 50px;
+}
+
+
+@media screen and (max-width:950px) {
     .footer{
         width:100vw;
         padding: 4rem 2rem;
@@ -58,9 +65,5 @@
     
     .footer i{
         margin: 1rem 1rem 0 0;
-    }
-
-    .bottom div{
-        width: 50%;
     }
 }

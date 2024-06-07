@@ -4,12 +4,16 @@ import { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import{ Link }from 'react-router-dom';
 
+
 class Navbar extends Component{
+
+
   state={clicked:false};
   handleClick=()=>{
     this.setState({clicked:!this.state.clicked})
   }
   render() {
+    const { isAuth, signUserOut } = this.props;
     return (
       <nav className='NavbarItems'>
        <Link to="/"> <h1 className="navbar-logo"><h1 className='pink'>Pink</h1> <h1 className='blue'>Blue</h1></h1></Link>
@@ -26,9 +30,12 @@ class Navbar extends Component{
               </li>
             )
           })}
-         <Link to="/login"><button className='nav-btn'>
+        {(!isAuth)? <Link to="/login"><button className='nav-btn'>
             Sign In
-          </button></Link>
+          </button></Link>:
+            <button className='nav-btn' onClick={signUserOut}>
+            Sign Out
+          </button>}
         </ul>
       </nav>
     )

@@ -4,8 +4,9 @@ import {Link, useNavigate} from "react-router-dom"
 import { createUserWithEmailAndPassword, updateProfile} from "firebase/auth"
 import {auth } from "../firebase"
 import "./signup.css"
+import Navbar from '../navbar'
 
-const Signup = () => {
+const Signup = ({ setIsAuth}) => {
   const navigate=useNavigate();
   const [values,setValues]=useState({
     name: "",
@@ -32,6 +33,8 @@ const Signup = () => {
       await updateProfile(user,
         {displayname: values.name,
       });
+      localStorage.setItem("isAuth", true);
+      setIsAuth(true);
       navigate("/");
       
     })
@@ -43,6 +46,7 @@ const Signup = () => {
 
   return (
        <div className="container-n">
+        <Navbar/>
         <div className="innerBox">
             <h1 className="heading">
                 SignUp

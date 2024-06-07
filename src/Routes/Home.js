@@ -9,10 +9,10 @@ import Footer from '../Footer'
 import "../css/hero.css"
 
 
-const Home = ({isAuth}) => {
+const Home = ({isAuth,signUserOut}) => {
   return (
     <div>
-        <Navbar/>
+        <Navbar isAuth={isAuth} signUserOut={signUserOut} />
       <Hero/>
 
       <Therapy/>
