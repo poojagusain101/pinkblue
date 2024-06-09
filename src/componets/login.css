@@ -5,17 +5,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 60px;
 }
 
 .innerBox{
-    min-width: 480px;
+    width: 480px;
     height: fit-content;
     width: fit-content;
     background-color: whitesmoke;
     box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
     padding: 30px;
     border-radius: 10px;
-    /* display: flex; */
     font-display: column;
     gap: 30px;
 }
@@ -71,10 +71,10 @@
     color: red;
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width:650px){
     .innerBox{
-        min-width: 280px;
-        padding: 0px;
+        min-width: 85%;
+        padding: 15px;
         gap:10px;
     }
 }

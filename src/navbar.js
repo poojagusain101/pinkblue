@@ -11,6 +11,11 @@ class Navbar extends Component{
   handleClick=()=>{
     this.setState({clicked:!this.state.clicked})
   }
+
+  handleLinkClick = () => {
+    this.setState({ clicked: false });
+  }
+
   render() {
     const { isAuth, signUserOut } = this.props;
     return (
@@ -25,12 +30,12 @@ class Navbar extends Component{
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <Link className={item.cName} to={item.url}> {item.title}</Link>
+                <Link className={item.cName} to={item.url} onClick={this.handleLinkClick}> {item.title}</Link>
               </li>
             )
           })}
           <li>
-          {(!isAuth)? <Link className='nav-links-mobile' to="/login">
+          {(!isAuth)? <Link className='nav-links-mobile' to="/login" onClick={this.handleLinkClick}>
             Sign In
          </Link>:
             <button className='nav-links-mobile' onClick={signUserOut}>
