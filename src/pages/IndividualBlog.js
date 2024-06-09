@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../navbar';
 import { Link, useParams } from 'react-router-dom';
 import { collection, doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
@@ -29,7 +28,6 @@ const IndividualBlog = () => {
 
   return (
     <>
-      <Navbar />
       {/* Render individual blog content */}
       {blog && (
         <div className="individual-blog">

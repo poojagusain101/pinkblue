@@ -23,6 +23,7 @@ import IndividualBlog from './pages/IndividualBlog';
 import { signOut } from 'firebase/auth';
 import Therapists from './TherapyTypes/Therapists';
 import ScrollToTop from './ScrollToTop';
+import Navbar from './navbar';
 // import {useNavigate} from "react-router-dom"
 
 function App() {
@@ -30,19 +31,23 @@ function App() {
   // const navigate=useNavigate();
 
   const signUserOut=()=>{
+    const confirmSignOut = window.confirm("Are you sure you want to SIGNOUT?");
+    if(confirmSignOut){
     signOut(auth).then(()=>{
       localStorage.clear();
       setIsAuth(false);
       window.location.pathname="/login";
     })
   }
+  }
 
   return (
     <div className="App">
-      <ScrollToTop />  
+      <ScrollToTop /> 
+      <Navbar isAuth={isAuth} signUserOut={signUserOut} /> 
       <Routes>   
  
-        <Route path='/' element={<Home isAuth={isAuth} signUserOut={signUserOut}/>}/>
+        <Route path='/' element={<Home isAuth={isAuth}/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/service' element={<Service/>}/>

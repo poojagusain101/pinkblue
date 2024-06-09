@@ -46,7 +46,7 @@ const Popular = () => {
           <h2 className='title'>
             Our Popular Blogs!!!
           </h2>
-          <p>here are some of our refreshing blogs...</p>
+          <p>Here are some of our refreshing blogs...</p>
         </div>       
 
       <div className="container grid">

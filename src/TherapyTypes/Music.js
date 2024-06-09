@@ -1,12 +1,10 @@
 import React from 'react'
-import Navbar from '../navbar'
 import './music.css'
 
 
 const Music = () => {
   return (
     <div className='music'>
-    <Navbar/>
       <h2 className='music-h2'>“MUSIC doesn’t get in. MUSIC is already in. MUSIC simply uncovers what is there, makes you feel emotions that you didn’t necessarily know you had inside you, and runs around waking them all up. A rebirth of sorts.”</h2>
       <div className="grid-wrapper1">
         <div className='row'>

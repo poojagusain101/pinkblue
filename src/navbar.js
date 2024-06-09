@@ -4,7 +4,6 @@ import { Component } from 'react';
 import { MenuItems } from './MenuItems';
 import{ Link }from 'react-router-dom';
 
-
 class Navbar extends Component{
 
 
@@ -30,6 +29,15 @@ class Navbar extends Component{
               </li>
             )
           })}
+          <li>
+          {(!isAuth)? <Link className='nav-links-mobile' to="/login">
+            Sign In
+         </Link>:
+            <button className='nav-links-mobile' onClick={signUserOut}>
+            Sign Out
+          </button>}
+          </li>
+
         {(!isAuth)? <Link to="/login"><button className='nav-btn'>
             Sign In
           </button></Link>:
@@ -41,5 +49,6 @@ class Navbar extends Component{
     )
   }
 }
+
 
 export default Navbar

@@ -1,12 +1,10 @@
 import React from 'react'
 import '../css/About.css'
-import Navbar from '../navbar'
 import Footer from '../Footer'
 
 const About = () => {
   return (
     <>
-     <Navbar/>
     <div className='about'>     
       <div className='body'>
       <div className="section">

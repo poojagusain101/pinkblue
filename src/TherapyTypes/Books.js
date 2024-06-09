@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../navbar'
 import './books.css'
 import book1 from './6books/book1.jpeg';
 import book2 from './6books/book2.jpeg';
@@ -12,7 +11,6 @@ const Books = () => {
   return (
     <>
             <div className='books'>
-              <Navbar/>
               <h1 className='books-h1'>BOOKS</h1>
                 <h2 className='books-h2'>Explore the pages of these books to help you elevate your mental well-being and unlock a healthier, happier mind</h2>
                 <div className="grid-wrapper">

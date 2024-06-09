@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from 'react'
-import Navbar from '../navbar';
 import { addDoc, collection } from "firebase/firestore";
 import { db, auth } from "../firebase";
 import { useNavigate } from "react-router-dom";
@@ -30,7 +29,6 @@ const Createpost = ({isAuth}) => {
 
   return (
     <>
-    <Navbar/>
     <div className='createPost'>
       <div className="cpContainer">
         <h1>Create A Post</h1>

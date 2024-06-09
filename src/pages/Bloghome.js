@@ -1,5 +1,5 @@
 import React,{useEffect, useState} from 'react'
-import Navbar from '../navbar'
+// import Navbar from '../navbar'
 import "./bloghome.css"
 import { Link } from 'react-router-dom'
 // import { useNavigate } from "react-router-dom";
@@ -71,7 +71,6 @@ const Bloghome = ({isAuth}) => {
 
   return (
     <>
-    <Navbar/>
     <div className='bloghome'>
       <div className='bh-top'>
         <h1>Get started with our Blogs, <h1>Share your stories</h1></h1>

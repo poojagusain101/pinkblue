@@ -1,13 +1,11 @@
 import React from 'react'
 import "../css/service.css"
-import Navbar from '../navbar'
 import Counselors from '../Counselors'
 import Footer from '../Footer'
 
 const Service = () => {
   return (
     <>
-    <Navbar/>
     <div className='service'>
       <h1 className='service-h1'>Our Pricing Plans</h1>
       <div className="grid-wrapper-service">

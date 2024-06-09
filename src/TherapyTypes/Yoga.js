@@ -1,11 +1,9 @@
 import React from 'react'
-import Navbar from '../navbar'
 import './yoga.css'
 
 const Yoga = () => {
   return (
        <div className='yoga'>
-              <Navbar/>
               <h1 className='yoga-h1'>YOGA</h1>
                 <h2 className='yoga-h2'>Yoga and meditation promote relaxation – the opposite of anxiety, stress and depression</h2>
                 <div className="grid-wrapper1">

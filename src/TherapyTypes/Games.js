@@ -1,12 +1,10 @@
 import React from 'react'
-import Navbar from '../navbar'
 import './games.css'
 
 const Games = () => {
   return (
     <>
       <div className='games'>
-        <Navbar />
         {/* <h1 className='games-h1'>GAMES</h1> */}
         <h2 className='games-h2'>MENTAL HEALTH GAMES AND ACTIVITIES TO BOOST WELL-BEING</h2>
         <div className="grid-wrapper-game">
