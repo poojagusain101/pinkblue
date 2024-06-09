@@ -19,6 +19,7 @@ import Signup from './componets/Signup';
 import { auth } from './firebase';
 import Bloghome from './pages/Bloghome';
 import Createpost from './pages/Createpost';
+import IndividualBlog from './pages/IndividualBlog';
 import { signOut } from 'firebase/auth';
 import Therapists from './TherapyTypes/Therapists';
 import ScrollToTop from './ScrollToTop';
@@ -53,6 +54,7 @@ function App() {
         <Route path='/login' element={<Login setIsAuth={setIsAuth}/>}/>
         <Route path='/signup' element={<Signup setIsAuth={setIsAuth}/>}/>
         <Route path='/blogs' element={<Bloghome isAuth={isAuth}/>}/>
+        <Route path="/blogs/:id" element={<IndividualBlog/>} />
         <Route path='/blogs/createpost' element={<Createpost isAuth={isAuth}/>}/>
       </Routes>
     </div>

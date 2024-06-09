@@ -76,7 +76,7 @@
 
 .deletePost button {
     border: none;
-
+    color: rgb(176, 5, 5);
     background: none;
     font-size: 30px;
     cursor: pointer;

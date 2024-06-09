@@ -13,7 +13,6 @@
 .container.grid{
     display: flex;
     flex-wrap: nowrap;
-  
 }
 
 .Intro{
@@ -106,11 +105,12 @@ a:hover{
 
     .singlepost.grid{
         width:85%;
+        overflow-y: scroll;
     }
 
     .imgDiv{
         height: 130px;
-        width: 400px;
+        width: 500px;
     }
 }
 

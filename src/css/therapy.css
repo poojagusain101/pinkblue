@@ -77,6 +77,11 @@
 
 @media screen and (max-width: 850px){
 
+    .therapy h1{
+        font-size: 2.5rem;
+        margin: 8px 0 0 0;
+    }
+
     .t-card{
         width: 100%;
         margin-bottom: 1.5rem;

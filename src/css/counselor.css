@@ -1,6 +1,7 @@
 .counselors{
     padding-top: 40px;
     background-color: antiquewhite;
+    overflow-x: scroll;
 }
 
 .counselors-h1{
@@ -83,6 +84,7 @@
     .member{
         min-height: 300px;
         min-width: 250px;
-        padding:20px;
+        /* padding:20px; */
+        margin:40px;
     }
 }

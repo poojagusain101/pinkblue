@@ -2,7 +2,7 @@ import React,{useEffect, useState} from 'react'
 import Navbar from '../navbar'
 import "./bloghome.css"
 import { Link } from 'react-router-dom'
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import {getDocs,  collection, deleteDoc, doc} from "firebase/firestore";
 import { db,auth } from "../firebase";
 
@@ -33,9 +33,12 @@ const Bloghome = ({isAuth}) => {
   };
 
   const deletePost = async (id) => {
-    const postDoc = doc(db, "posts", id);
-    await deleteDoc(postDoc);
-    getPosts();
+    const confirmDelete = window.confirm("Are you sure you want to delete this post?");
+    if (confirmDelete) {
+      const postDoc = doc(db, "posts", id);
+      await deleteDoc(postDoc);
+      getPosts();
+    }
   };
 
   useEffect(() => {
@@ -81,11 +84,13 @@ const Bloghome = ({isAuth}) => {
       <div className="postcontainer">
       {postLists.map((post)=>{
         return (
-        <div className="post">
+        <div className="post" key={post.id}>
           <div className="postHeader">
+          <Link to={`/blogs/${post.id}`} className="blog-link">
             <div className="posttitle">
             <h1>{post.title}</h1>
-            </div>   
+            </div> 
+            </Link>  
             <div className="deletePost">  
               {isAuth && post.author.id===auth.currentUser.uid && (
               <button 
