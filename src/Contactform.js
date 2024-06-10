@@ -41,10 +41,10 @@ const Contactform = () => {
     <div className='form-container'>
     <h1>Send a msg to us!</h1>
     <form ref={form} onSubmit={sendEmail}>
-      <input name="user_name" placeholder='Name' type="text" value={formData.user_name} onChange={handleChange}/>
-      <input name="user_email" placeholder='Email' type="Email" value={formData.user_email} onChange={handleChange}/>
-      <input name="subject" placeholder='Subject' type="text" value={formData.subject} onChange={handleChange} />
-      <textarea name="message" cols="30" rows="4" placeholder='Message' value={formData.message} onChange={handleChange}/>
+      <input name="user_name" placeholder='Name' type="text" value={formData.user_name} onChange={handleChange} required/>
+      <input name="user_email" placeholder='Email' type="Email" value={formData.user_email} onChange={handleChange} required/>
+      <input name="subject" placeholder='Subject' type="text" value={formData.subject} onChange={handleChange} required />
+      <textarea name="message" cols="30" rows="4" placeholder='Message' value={formData.message} onChange={handleChange} required/>
       <button type="submit" value="Send">Send Message</button>
     </form>
 

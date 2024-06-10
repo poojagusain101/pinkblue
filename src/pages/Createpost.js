@@ -13,6 +13,10 @@ const Createpost = ({isAuth}) => {
 
 
   const createPost = async () => {
+    if(title==="" || postText===""){
+      window.alert("Please fill all fields");
+      return;
+    }
     await addDoc(postsCollectionRef, {
       title,
       postText,
@@ -38,7 +42,7 @@ const Createpost = ({isAuth}) => {
         placeholder='Title...' 
         onChange={(event)=>{
         setTitle(event.target.value);
-        }}/>
+        }} required/>
         </div>
         <div className="inputGp">
 
@@ -48,7 +52,7 @@ const Createpost = ({isAuth}) => {
         placeholder='Post...'
         onChange={(event)=>{
           setPostText(event.target.value);
-        }}/>
+        }} required/>
        
         </div>
 

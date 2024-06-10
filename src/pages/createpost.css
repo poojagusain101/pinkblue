@@ -75,6 +75,11 @@
   @media screen and (max-width:850px){
     
     .cpContainer {
-        width: 500px;
+        width: 80%;
     }
+    .cpContainer button {
+      margin-top: 20px;
+      height: 40px;
+      width:200px;
+      border: none;}
   }

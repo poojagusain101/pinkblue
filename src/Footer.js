@@ -36,8 +36,8 @@ const Footer = () => {
 
             <div>
                 {/* <h4>Project</h4> */}
-                <a href="/">Contact Us</a>
-                <a href="/">About Us</a>
+                <a href="/Contact">Contact Us</a>
+                <a href="/About">About Us</a>
                 <a href="/">Disclaimer</a>
                 <a href="/">Privacy Policy</a>
             </div>
